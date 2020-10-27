@@ -125,17 +125,57 @@ body {
 
 /* main */
 .phylosophy {
+    /* text-align: center; */
     background: #aeadd9;
-    padding: 128px 60px;
+    min-height: 258px;
+    padding: 98px 60px 20px 60px;
+    position: relative;
+}
+.phylosophy-slider-back {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    height: calc(100% - 78px);
+    border: none;
+    background: transparent;
+}
+.phylosophy-slider-back:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.384) 0%, transparent 100%);
+}
+.phylosophy-slider-forward {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    height: calc(100% - 78px);
+    border: none;
+    background: transparent;
+}
+.phylosophy-slider-forward:hover {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.384) 0%, transparent 100%);
+}
+.phylosophy-arrow-forward {
+    transform: rotate(180deg);
+}
+.phylosophy-slider {
+    width: 1000px;
+    margin: auto;
 }
 .phylosophy-text {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 900;
     color: #fff;
     margin-bottom: 30px;
+    display: none;
+}
+.phylosophy-text.active {
+    display: initial;
 }
 .welcome {
     padding-top: 30px;
-    padding-bottom: 40px;
 }
 .welcome-h {
     color: #fea78b;
@@ -299,9 +339,10 @@ body {
 .profile {
     padding: 98px 0 50px 285px;
     transition: 1s;
+    margin: 0;
 }
 .sidebar.hide + .profile {
-    padding-left: 60px;
+    padding-left: 260px;
 }
 .profile-h {
     font-weight: 900;
