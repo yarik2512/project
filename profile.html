@@ -22,7 +22,7 @@
     </div>
     <div class="sidebar hide">
         <div class="sidebar-hide">
-            <span class="sidebar-hide-btn">Свернуть</span><img src="img/sidebar_arrow.png" class="sidebar-burger"></img>
+            <span class="sidebar-hide-btn">Свернуть</span><img src="img/sidebar_arrow.svg" class="sidebar-burger"></img>
         </div>
         <nav class="nav">
             <a href="#" class="nav-link">Мой профиль</a>
@@ -59,13 +59,116 @@
                 </div>
             </div>
         </div>
-        <div class="profile-tabs">
-            <a href="#" class="profile-tab" id="tasks">Мои задачи</a>
-            <a href="#" class="profile-tab" id="stats">Моя статистика</a>
-            <a href="#" class="profile-tab" id="favorite">Избранное</a>
+        <div class="profile-tabs-btns">
+            <button href="#" class="profile-tab-btn active" id="tasks">Мои задачи</button>
+            <button href="#" class="profile-tab-btn" id="stats">Моя статистика</button>
+            <button href="#" class="profile-tab-btn" id="favorite">Избранное</button>
+        </div>
+        <div class="tasks-tab active">
+            <div class="tasks-interact">
+                <button class="add-task" data-tooltip="Добавить новую задачу"><img src="img/add.svg" alt="+" class="add-task-icon"></button>
+                <div class="tasks-tags">
+                    <h2 class="tasks-tags-h">#тэги</h2>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#fbc89d">тэг1</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#dcc7ff">тэг2</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#cae59e">тэг3</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#86b38c">большойтэг</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#adc6ff">простоогромныйтэг</span>
+                </div>
+            </div>
+            <div class="tasks-list">
+                <table class="tasks-list-table">
+                    <tr class="tasks-list-head">
+                        <th class="tasks-list-th">название</th>
+                        <th class="tasks-list-th">тема</th>
+                        <th class="tasks-list-th">тэги</th>
+                        <th class="tasks-list-th">статус</th>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то задача</td>
+                        <td class="tasks-list-td">какая-то тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг1</span><span class="tasks-tag">большойтэг</span></td>
+                        <td class="tasks-list-td" data-solved="true">решено</td>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то вторая задача</td>
+                        <td class="tasks-list-td">какая-то вторая тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг2</span><span class="tasks-tag">большойтэг</span><span class="tasks-tag">простоогромныйтэг</span></td>
+                        <td class="tasks-list-td" data-solved="false">не решено</td>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то третья задача</td>
+                        <td class="tasks-list-td">какая-то третья тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг3</span><span class="tasks-tag">простоогромныйтэг</span></td>
+                        <td class="tasks-list-td" data-solved="false">не решено</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="stats-tab">
+            <span class="stats-category-open" data-category="stats-all-tasks">По всем заданиям</span>
+            <div class="stats-category stats-all-tasks active">
+                <p class="stats-category-text">Всего решено: <span class="all-total-tasks-count"></span></p>
+                <p class="stats-category-text">Верно решенные: <span class="all-right-tasks-count"></span></p>
+                <p class="stats-category-text">Неверно решенные: <span class="all-wrong-tasks-count"></span></span>
+                <p class="stats-category-text">Процент верно решенных: <span class="all-tasks-percentage"></span></p>
+            </div>
+            <span class="stats-category-open" data-category="stats-by-subject">По предметам</span>
+            <select class="stats-category-selector">
+                <option value="maths" class="stats-category-selector-option">Математика</option>
+                <option value="russian" class="stats-category-selector-option">Русский язык</option>
+                <option value="english" class="stats-category-selector-option">Английский язык</option>
+            </select>
+            <div class="stats-category stats-by-subject">
+                <p class="stats-category-text">Всего решено: <span class="total-tasks-count"></span></p>
+                <p class="stats-category-text">Верно решенные: <span class="right-tasks-count"></span></p>
+                <p class="stats-category-text">Неверно решенные: <span class="wrong-tasks-count"></span></p>
+                <p class="stats-category-text">Процент верно решенных: <span class="tasks-percentage"></span></p>
+            </div>
+        </div>
+        <div class="favourite-tab">
+            <div class="tasks-interact">
+                <div class="tasks-tags">
+                    <h2 class="tasks-tags-h">#тэги</h2>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#fbc89d">тэг1</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#dcc7ff">тэг2</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#cae59e">тэг3</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#86b38c">большойтэг</span>
+                    <span class="tasks-tag tasks-tag-btn" data-bg="#adc6ff">простоогромныйтэг</span>
+                </div>
+            </div>
+            <div class="tasks-list">
+                <table class="tasks-list-table">
+                    <tr class="tasks-list-head">
+                        <th class="tasks-list-th">название</th>
+                        <th class="tasks-list-th">тема</th>
+                        <th class="tasks-list-th">тэги</th>
+                        <th class="tasks-list-th">статус</th>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то задача</td>
+                        <td class="tasks-list-td">какая-то тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг1</span><span class="tasks-tag">большойтэг</span></td>
+                        <td class="tasks-list-td" data-solved="true">решено</td>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то вторая задача</td>
+                        <td class="tasks-list-td">какая-то вторая тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг2</span><span class="tasks-tag">большойтэг</span><span class="tasks-tag">простоогромныйтэг</span></td>
+                        <td class="tasks-list-td" data-solved="false">не решено</td>
+                    </tr>
+                    <tr class="tasks-list-tr">
+                        <td class="tasks-list-td">какая-то третья задача</td>
+                        <td class="tasks-list-td">какая-то третья тема</td>
+                        <td class="tasks-list-td"><span class="tasks-tag">тэг3</span><span class="tasks-tag">простоогромныйтэг</span></td>
+                        <td class="tasks-list-td" data-solved="false">не решено</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
     <script src="js/sidebar.js"></script>
+    <script src="js/profile_tabs.js"></script>
 </body>
 </html>
