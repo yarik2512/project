@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить задание</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-name">Название</span>
+        </a>
+        <a href="profile.html" class="user">
+            <img src="img/avatar.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-info">
+                <span class="user-name">Имя Фамилия</span><br>
+                <span class="user-authent">вход выполнен</span>
+            </div>
+        </a>
+    </div>
+    <div class="modal-add">
+        <div class="container">
+            <h2 class="modal-add-h">Добавить новое задание</h2>
+            <div class="modal-add-main">
+                <form class="modal-add-form">
+                    <label for="task-type" class="modal-add-label">Выберите тип задания</label>
+                    <select class="modal-add-select" name="task-type" id="task-type">
+                        <option value="test">тестовое задание</option>
+                        <option value="solve">задание с решением</option>
+                        <option value="open">задание с открытым ответом</option>
+                    </select>
+                    <input type="text" class="modal-add-input" name="task-name" placeholder="Название">
+                    <textarea class="modal-add-textarea" name="task-text" cols="30" rows="10" placeholder="Текст задания"></textarea>
+                    <div class="modal-add-variate">
+                        <span data-for="task-ans-1" class="task-ans-label" data-right></span><!--
+                        --><input type="text" name="task-ans-1" id="task-ans-1" data-right class="modal-ans-input" placeholder="Вариант ответа"><br>
+                        <span data-for="task-ans-2" class="task-ans-label"></span><!--
+                        --><input type="text" name="task-ans-2" id="task-ans-2" class="modal-ans-input" placeholder="Вариант ответа"><br>
+                        <button class="modal-add-ans-btn test-task-btn add" type="button" id="add-ans"><img src="img/add_black.svg" alt="+" class="modal-add-ans-img"></button>
+                        <span class="modal-add-ans-span">Добавить еще один вариант</span>
+                        <button class="modal-add-ans-btn test-task-btn rm" type="button" id="add-ans"><img src="img/clear.svg" alt="x" class="modal-add-ans-img"></button>
+                        <span class="modal-add-ans-span">Удалить вариант</span>
+                    </div>
+                    <div class="modal-add-illustr">
+                        <h3 class="modal-add-illustr-h">Пояснение</h3>
+                        <input class=modal-add-file type="file" name="task-illustration" id="task-illustration">
+                        <label for="task-illustration" class="modal-add-illustr-label">
+                            <span class="modal-add-illustr-btn"><img src="img/add_grey.svg" alt="+" class="modal-add-illustr-btn-img"></span>
+                            <span class="modal-add-illustr-span">загрузить файл</span>
+                        </label>
+                    </div><br>
+                    <div class="modal-add-final">
+                        <div class="modal-add-score">
+                            <label for="task-score" class="modal-add-score-label">Количество баллов</label>
+                            <input type="number" name="task-score" id="task-score" class="modal-add-score-input">
+                        </div>
+                        <button type="submit" class="modal-add-btn">Загрузить данные</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/modal_add.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Название</title>
+    <title>Мой профиль</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -62,11 +62,11 @@
         <div class="profile-tabs-btns">
             <button href="#" class="profile-tab-btn active" id="tasks">Мои задачи</button>
             <button href="#" class="profile-tab-btn" id="stats">Моя статистика</button>
-            <button href="#" class="profile-tab-btn" id="favorite">Избранное</button>
+            <button href="#" class="profile-tab-btn" id="favourite">Избранное</button>
         </div>
         <div class="tasks-tab active">
             <div class="tasks-interact">
-                <button class="add-task" data-tooltip="Добавить новую задачу"><img src="img/add.svg" alt="+" class="add-task-icon"></button>
+                <a href="addtask.html" class="add-task" data-tooltip="Добавить новую задачу"><img src="img/add.svg" alt="+" class="add-task-icon"></a>
                 <div class="tasks-tags">
                     <h2 class="tasks-tags-h">#тэги</h2>
                     <span class="tasks-tag tasks-tag-btn" data-bg="#fbc89d">тэг1</span>
@@ -106,8 +106,8 @@
             </div>
         </div>
         <div class="stats-tab">
-            <span class="stats-category-open" data-category="stats-all-tasks">По всем заданиям</span>
-            <div class="stats-category stats-all-tasks active">
+            <span class="stats-category-open" data-category="stats-all-tasks">По всем заданиям</span><br>
+            <div class="stats-category active" id="stats-all-tasks">
                 <p class="stats-category-text">Всего решено: <span class="all-total-tasks-count"></span></p>
                 <p class="stats-category-text">Верно решенные: <span class="all-right-tasks-count"></span></p>
                 <p class="stats-category-text">Неверно решенные: <span class="all-wrong-tasks-count"></span></span>
@@ -119,7 +119,7 @@
                 <option value="russian" class="stats-category-selector-option">Русский язык</option>
                 <option value="english" class="stats-category-selector-option">Английский язык</option>
             </select>
-            <div class="stats-category stats-by-subject">
+            <div class="stats-category" id="stats-by-subject">
                 <p class="stats-category-text">Всего решено: <span class="total-tasks-count"></span></p>
                 <p class="stats-category-text">Верно решенные: <span class="right-tasks-count"></span></p>
                 <p class="stats-category-text">Неверно решенные: <span class="wrong-tasks-count"></span></p>
