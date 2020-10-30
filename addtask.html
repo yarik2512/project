@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавить задание</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addtask.css">
 </head>
 <body>
     <div class="top-bar">
@@ -20,43 +20,43 @@
             </div>
         </a>
     </div>
-    <div class="modal-add">
+    <div class="add">
         <div class="container">
-            <h2 class="modal-add-h">Добавить новое задание</h2>
-            <div class="modal-add-main">
-                <form class="modal-add-form">
-                    <label for="task-type" class="modal-add-label">Выберите тип задания</label>
-                    <select class="modal-add-select" name="task-type" id="task-type">
+            <h2 class="add-h">Добавить новое задание</h2>
+            <div class="add-main">
+                <form class="add-form">
+                    <label for="task-type" class="add-label">Выберите тип задания</label>
+                    <select class="add-select" name="task-type" id="task-type">
                         <option value="test">тестовое задание</option>
                         <option value="solve">задание с решением</option>
                         <option value="open">задание с открытым ответом</option>
                     </select>
-                    <input type="text" class="modal-add-input" name="task-name" placeholder="Название">
-                    <textarea class="modal-add-textarea" name="task-text" cols="30" rows="10" placeholder="Текст задания"></textarea>
-                    <div class="modal-add-variate">
+                    <input type="text" class="add-input" name="task-name" placeholder="Название">
+                    <textarea class="add-textarea" name="task-text" cols="30" rows="10" placeholder="Текст задания"></textarea>
+                    <div class="add-variate">
                         <span data-for="task-ans-1" class="task-ans-label" data-right></span><!--
-                        --><input type="text" name="task-ans-1" id="task-ans-1" data-right class="modal-ans-input" placeholder="Вариант ответа"><br>
+                        --><input type="text" name="task-ans-1" id="task-ans-1" data-right class="ans-input" placeholder="Вариант ответа"><br>
                         <span data-for="task-ans-2" class="task-ans-label"></span><!--
-                        --><input type="text" name="task-ans-2" id="task-ans-2" class="modal-ans-input" placeholder="Вариант ответа"><br>
-                        <button class="modal-add-ans-btn test-task-btn add" type="button" id="add-ans"><img src="img/add_black.svg" alt="+" class="modal-add-ans-img"></button>
-                        <span class="modal-add-ans-span">Добавить еще один вариант</span>
-                        <button class="modal-add-ans-btn test-task-btn rm" type="button" id="add-ans"><img src="img/clear.svg" alt="x" class="modal-add-ans-img"></button>
-                        <span class="modal-add-ans-span">Удалить вариант</span>
+                        --><input type="text" name="task-ans-2" id="task-ans-2" class="ans-input" placeholder="Вариант ответа"><br>
+                        <button class="add-ans-btn test-task-btn add" type="button" id="add-ans"><img src="img/add_black.svg" alt="+" class="add-ans-img"></button>
+                        <span class="add-ans-span">Добавить еще один вариант</span>
+                        <button class="add-ans-btn test-task-btn rm" type="button" id="add-ans"><img src="img/clear.svg" alt="x" class="add-ans-img"></button>
+                        <span class="add-ans-span">Удалить вариант</span>
                     </div>
-                    <div class="modal-add-illustr">
-                        <h3 class="modal-add-illustr-h">Пояснение</h3>
-                        <input class=modal-add-file type="file" name="task-illustration" id="task-illustration">
-                        <label for="task-illustration" class="modal-add-illustr-label">
-                            <span class="modal-add-illustr-btn"><img src="img/add_grey.svg" alt="+" class="modal-add-illustr-btn-img"></span>
-                            <span class="modal-add-illustr-span">загрузить файл</span>
+                    <div class="add-illustr">
+                        <h3 class="add-illustr-h">Пояснение</h3>
+                        <input class=add-file type="file" name="task-illustration" id="task-illustration">
+                        <label for="task-illustration" class="add-illustr-label">
+                            <span class="add-illustr-btn"><img src="img/add_grey.svg" alt="+" class="add-illustr-btn-img"></span>
+                            <span class="add-illustr-span">загрузить файл</span>
                         </label>
                     </div><br>
-                    <div class="modal-add-final">
-                        <div class="modal-add-score">
-                            <label for="task-score" class="modal-add-score-label">Количество баллов</label>
-                            <input type="number" name="task-score" id="task-score" class="modal-add-score-input">
+                    <div class="add-final">
+                        <div class="add-score">
+                            <label for="task-score" class="add-score-label">Количество баллов</label>
+                            <input type="number" name="task-score" id="task-score" class="add-score-input">
                         </div>
-                        <button type="submit" class="modal-add-btn">Загрузить данные</button>
+                        <button type="submit" class="add-btn">Загрузить данные</button>
                     </div>
                 </form>
             </div>
