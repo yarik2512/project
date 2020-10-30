@@ -1,0 +1,186 @@
+@import 'style.css';
+
+.settings {
+    padding-top: 108px;
+    position: relative;
+}
+.history-back-btn {
+    position: fixed;
+    left: 15px;
+    top: 93px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #838488;
+    border-radius: 5px;
+}
+.history-back-img {
+    width: 45px;
+    height: 45px;
+    transform: rotate(180deg);
+
+}
+.settings-h {
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.settings-main {
+    display: flex;
+    margin-bottom: 20px;
+}
+.settings-change-avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+.settings-avatar {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.settings-change-avatar-file {
+    display: none;
+    opacity: 0;
+}
+.settings-change-avatar-label {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    background: #00000034;
+    border-radius: 5px;
+}
+.settings-change-info {
+    width: calc(100% - 220px);
+}
+.settings-change-info-input {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    border: none;
+    background: #d1d1d3;
+    font-weight: 900;
+    font-size: 16px;
+    color: #84848c;
+}
+.settings-change-info-input:nth-child(1) {
+    margin-right: 20px;
+}
+.settings-change-info-textarea {
+    display: block;
+    width: 100%;
+    height: 80px;
+    border: none;
+    background: #d1d1d3;
+    resize: none;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #84848c;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.settings-rang {
+    display: block;
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.settings-route {
+    font-weight: 900;
+    font-size: 16px;
+    color: #000000;
+    margin-right: 15px;
+}
+.settings-route-select {
+    padding: 5px 10px;
+    border: none;
+    background: #d1d1d3;
+    font-weight: 900;
+    font-size: 16px;
+    color: #84848c;
+}
+.settings-status {
+    display: block;
+    padding: 5px 10px;
+    border: none;
+    background: #d1d1d3;
+    font-weight: 900;
+    font-size: 16px;
+    color: #84848c;
+    margin-bottom: 20px;
+}
+.settings-status > .active {
+    background: #def0b2;
+}
+.settings-btn {
+    cursor: pointer;
+    background: #fea78b;
+    padding: 10px 50px;
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+}
+.settings-btn:hover {
+    background: #aa705c;
+}
+.status-confirm-h {
+    font-weight: 900;
+}
+.status-confirm-subh {
+    color: #838488;
+    font-weight: 900;
+    font-size: 16px; 
+    margin-bottom: 20px;
+}
+.status-confirm-file {
+    display: none;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+.status-confirm-labels {
+    margin-bottom: 20px;
+}
+.status-confirm-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    background: #d2d2d4;
+    margin-right: 10px;
+}
+.status-confirm-img {
+    width: 36px;
+    height: 36px;
+}
+.status-confirm-filename {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    padding: 5px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    background: #d2d2d4;
+    vertical-align: top;
+}

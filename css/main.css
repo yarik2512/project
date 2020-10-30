@@ -1,0 +1,93 @@
+@import 'style.css';
+
+.phylosophy {
+    background: #aeadd9;
+    min-height: 258px;
+    padding: 98px 60px 20px 60px;
+    position: relative;
+}
+.phylosophy-slider-back {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    height: calc(100% - 78px);
+    border: none;
+    background: transparent;
+}
+.phylosophy-slider-back:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.384) 0%, transparent 100%);
+}
+.phylosophy-slider-forward {
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    height: calc(100% - 78px);
+    border: none;
+    background: transparent;
+}
+.phylosophy-slider-forward:hover {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.384) 0%, transparent 100%);
+}
+.phylosophy-arrow-forward {
+    transform: rotate(180deg);
+}
+.phylosophy-slider {
+    width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.phylosophy-text {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    /* margin-bottom: 30px; */
+    display: none;
+}
+.phylosophy-text.active {
+    display: block;
+}
+.welcome {
+    padding-top: 30px;
+}
+.welcome-h {
+    color: #fea78b;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.welcome-subh {
+    color: #838488;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.actions {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 600px;
+    margin: auto;
+}
+.action {
+    width: 200px;
+    text-decoration: none;
+}
+.action-img {
+    width: 200px;
+    height: 200px;
+    background: #fea78b;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.action-info {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #fea78b;
+    margin: auto;
+}

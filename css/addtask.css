@@ -1,0 +1,240 @@
+@import 'style.css';
+
+.add {
+    background: #ffffff;
+    padding-top: 98px;
+}
+.add-h {
+    font-weight: 900;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.add-label {
+    font-weight: 900;
+    font-size: 20px;
+    color: #b1b1b9;
+    display: block;
+    margin-bottom: 15px;
+}
+.add-select {
+    background: #b2b3b8;
+    color: #414141;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    display: block;
+    outline: none;
+    margin-bottom: 15px;
+}
+.add-select > option {
+    font-weight: 900;
+    font-size: 16px;
+}
+.add-input {
+    display: block;
+    background: #c5c5c5;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.add-textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background: #c5c5c5;
+    color: #424242;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.add-illustr {
+    background: #c5c5c5;
+    padding: 5px 20px 10px 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.add-illustr-h {
+    font-weight: 900;
+    font-size: 16px;
+    color: #828282;
+    margin-bottom: 5px;
+}
+.add-file {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+.add-illustr-label {
+    cursor: pointer;
+}
+.add-illustr-btn {
+    width: 30px;
+    height: 30px;
+    background: #eeeeec;
+    display: inline-block;
+    padding: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.add-illustr-btn-img {
+    width: 20px;
+    height: 20px;
+}
+.add-illustr-span {
+    height: 30px;
+    background: #eeeeec;
+    display: inline-block;
+    padding: 3px 10px;
+    vertical-align: middle;
+    color: #9f9f9f;
+    font-weight: 900;
+    font-size: 16px;
+}
+.add-final {
+    float: right;
+    margin-bottom: 30px;
+}
+.add-score {
+    display: inline-block;
+    background: #cacaca;
+    color: #818181;
+    padding: 5px 5px 5px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.add-score-label {
+    display: inline-block;
+    margin-right: 10px;
+}
+.add-score-input {
+    width: 50px;
+    border: none;
+    background: #eeeeec;
+    color: #818181;
+    padding: 5px;
+    font-weight: 900;
+    font-size: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.add-btn {
+    cursor: pointer;
+    background: #fea78b;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.add-btn:hover {
+    background: #aa705c;
+}
+.add-variate {
+    margin-bottom: 15px;
+}
+.ans-input {
+    display: inline-block;
+    background: #c5c5c5;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.task-ans-label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #434343;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20px;
+    position: relative;
+}
+.task-ans-label[data-right] {
+    background: #bad294;
+}
+.task-ans-label[data-right]::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/radio.svg);
+    background-size: cover;
+}
+.add-ans-btn {
+    outline: none;
+    cursor: pointer;
+    margin-left: 40px;
+    background: #fea78b;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.add-ans-img {
+    width: 30px;
+    height: 30px;
+}
+.add-ans-span {
+    font-weight: 900;
+    font-size: 15px;
+}
+.add-criterion-input {
+    margin-left: 40px;
+    background: #c5c5c5;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+.add-criterion-score {
+    background: #c5c5c5;
+    padding: 7px 0 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 70px;
+    text-align: center;
+}
+.add-open-textarea {
+    /* width: 100%; */
+    width: 100%;
+    height: 150px;
+    resize: none;
+    font-weight: 900;
+    font-size: 15px;
+    padding: 7px 10px;
+    border: none;
+    border-radius: 10px;
+    background: #c5c5c5;
+    color: #424242;
+    font-family: sans-serif;
+}

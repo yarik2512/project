@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки</title>
+    <link rel="stylesheet" href="css/settings.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-name">Название</span>
+        </a>
+        <a href="profile.html" class="user">
+            <img src="img/avatar.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-info">
+                <span class="user-name">Имя Фамилия</span><br>
+                <span class="user-authent">вход выполнен</span>
+            </div>
+        </a>
+    </div>
+    <div class="settings">
+        <a href="profile.html" class="history-back-btn" title="Вернуться назад в профиль"><img src="img/sidebar_arrow.svg" alt="Назад" class="history-back-img"></a>
+        <div class="container">
+            <form class="settings-form">
+                <h1 class="settings-h">Редактировать профиль</h1>
+                <div class="settings-main">
+                    <div class="settings-change-avatar">
+                        <img src="./img/avatar.jpg" alt="A" class="settings-avatar">
+                        <input type="file" class="settings-change-avatar-file" name="change-avatar" id="change-avatar">
+                        <label for="change-avatar" class="settings-change-avatar-label">изменить изображение профиля</label>
+                    </div>
+                    <div class="settings-change-info">
+                        <input type="text" class="settings-change-info-input" name="change-name" placeholder="Имя"><!--
+                     --><input type="text" class="settings-change-info-input" name="change-surname" placeholder="Фамилия">
+                        <textarea class="settings-change-info-textarea" name="change-bio" id="change-bio" cols="30" rows="10" placeholder="Ссылки / о себе"></textarea>
+                        <span class="settings-rang">Ранг: <span id="user-rang"></span></span>
+                        <span class="settings-route">Путь </span><select class="settings-route-select" name="user-route" id="user-route">
+                            <option value="curd">Сырков</option>
+                            <option value="academical">Академический</option>
+                            <!-- <option value=""></option> -->
+                        </select>
+                    </div>
+                </div>
+                <select name="change-status" class="settings-status">
+                    <option class="active" value="default-user">Обычный пользователь</option>
+                    <option value="checker">Проверяющий задачи</option>
+                    <option value="olimp-organiser">Организатор олимпиад</option>
+                </select>
+                <div class="cofirm-required"></div>
+                <button type="submit" class="settings-btn">Сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/settings.js"></script>
+</body>
+</html>
