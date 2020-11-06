@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задачи</title>
+    <link rel="stylesheet" href="css/tasks.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo" class="logo-img">
+            <span class="logo-name">Название</span>
+        </a>
+        <a href="profile.html" class="user">
+            <img src="img/avatar.jpg" alt="Avatar" class="user-avatar">
+            <div class="user-info">
+                <span class="user-name">Имя Фамилия</span><br>
+                <span class="user-authent">вход выполнен</span>
+            </div>
+        </a>
+    </div>
+    <a href="profile.html" class="history-back-btn" title="Вернуться назад на главную"><img src="img/sidebar_arrow.svg" alt="Назад" class="history-back-img"></a>
+    <div class="tasks-main">
+        <h1 class="tasks-h">Задачи</h1>
+        <div class="tasks-feed">
+            <div class="task-card">
+                <div class="card-header">
+                    <span class="task-name">название</span>
+                    <span class="task-adder">Имя Фамилия</span>
+                </div>
+                <div class="card-main">
+                    <p class="task-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis eaque facere quisquam atque esse voluptatum impedit magni omnis qui hic iure sed, dolores corrupti itaque velit deleniti iste nostrum!
+                    </p>
+                    <button class="task-read-all">Читать дальше</button>
+                </div>
+                <div class="card-footer">
+                    <div class="card-tags">
+                        <span class="tasks-tag tasks-tag-btn" data-bg="#86b38c">большойтэг</span>
+                        <span class="tasks-tag tasks-tag-btn" data-bg="#adc6ff">простоогромныйтэг</span>
+                    </div>
+                    <div class="card-feedback">
+                        <button class="like"><img src="img/like.svg" alt="like" class="like-img"></button>
+                        <button class="rate"><img src="img/rate.svg" alt="rate" class="rate-img"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="task-card">
+                <div class="card-header">
+                    <span class="task-name">название</span>
+                    <span class="task-adder">Имя Фамилия</span>
+                </div>
+                <div class="card-main">
+                    <p class="task-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perspiciatis eaque facere quisquam atque esse voluptatum impedit magni omnis qui hic iure sed, dolores corrupti itaque velit deleniti iste nostrum!
+                    </p>
+                    <button class="task-read-all">Читать дальше</button>
+                </div>
+                <div class="card-footer">
+                    <div class="card-tags">
+                        <span class="tasks-tag tasks-tag-btn" data-bg="#fbc89d">тэг1</span>
+                        <span class="tasks-tag tasks-tag-btn" data-bg="#dcc7ff">тэг2</span>
+                        <span class="tasks-tag tasks-tag-btn" data-bg="#adc6ff">простоогромныйтэг</span>
+                    </div>
+                    <div class="card-feedback">
+                        <button class="like"><img src="img/like.svg" alt="like" class="like-img"></button>
+                        <button class="rate"><img src="img/rate.svg" alt="rate" class="rate-img"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tasks-filter">
+            <div class="filter-search">
+                <button class="search-btn"></button>
+                <input type="search" name="search" id="search" placeholder="поиск">
+            </div>
+            <span class="task-filter-span alw-open" data-for="rate-slider">рейтинг</span>
+            <div class="rate-slider-div">
+                
+            </div>
+            <span class="task-filter-span alw-open" data-for="difficulty-slider">сложность</span>
+            <span class="task-filter-span close">предмет</span>
+            <span class="task-filter-span close">тип задания</span>
+        </div>
+    </div>
+</body>
+</html>

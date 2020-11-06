@@ -27,21 +27,19 @@
                 <form class="add-form">
                     <label for="task-type" class="add-label">Выберите тип задания</label>
                     <select class="add-select" name="task-type" id="task-type">
+                        <option value="onevar">задание с простым ответом</option>
                         <option value="test">тестовое задание</option>
                         <option value="solve">задание с решением</option>
                         <option value="open">задание с открытым ответом</option>
                     </select>
                     <input type="text" class="add-input" name="task-name" placeholder="Название">
+                    <!-- <button class="text-format text-bold" type="button"><img src="img/format_bold.svg" alt="Bold" class="text-format-img"></button>
+                    <button class="text-format text-italic" type="button"><img src="img/format_italic.svg" alt="Italic" class="text-format-img"></button>
+                    <button class="text-format text-underlined" type="button"><img src="img/format_underlined.svg" alt="Underlined" class="text-format-img"></button> -->
+                    <!-- <div class="add-textarea" placeholder="Текст задания" contenteditable></div> -->
                     <textarea class="add-textarea" name="task-text" cols="30" rows="10" placeholder="Текст задания"></textarea>
                     <div class="add-variate">
-                        <span data-for="task-ans-1" class="task-ans-label" data-right></span><!--
-                        --><input type="text" name="task-ans-1" id="task-ans-1" data-right class="ans-input" placeholder="Вариант ответа"><br>
-                        <span data-for="task-ans-2" class="task-ans-label"></span><!--
-                        --><input type="text" name="task-ans-2" id="task-ans-2" class="ans-input" placeholder="Вариант ответа"><br>
-                        <button class="add-ans-btn test-task-btn add" type="button" id="add-ans"><img src="img/add_black.svg" alt="+" class="add-ans-img"></button>
-                        <span class="add-ans-span">Добавить еще один вариант</span>
-                        <button class="add-ans-btn test-task-btn rm" type="button" id="add-ans"><img src="img/clear.svg" alt="x" class="add-ans-img"></button>
-                        <span class="add-ans-span">Удалить вариант</span>
+                        <input type="text" name="task-ans-1" id="task-ans-1" class="ans-input" placeholder="Ответ"><br>
                     </div>
                     <div class="add-illustr">
                         <h3 class="add-illustr-h">Пояснение</h3>
@@ -63,6 +61,7 @@
         </div>
     </div>
 
-    <script src="js/modal_add.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="js/addtask.js"></script>
 </body>
 </html>

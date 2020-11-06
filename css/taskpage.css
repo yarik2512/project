@@ -1,0 +1,50 @@
+@import 'style.css';
+
+.task {
+    padding-top: 108px;
+}
+.task-name {
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.task-author {
+    color: #676767;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.task-text {
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: #c5c5c5;
+    color: #424242;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.answer {
+    font-size: 15px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    background: #c5c5c5;
+    color: #424242;
+    font-weight: 900;
+    border: none;
+    display: block;
+    margin-bottom: 40px;
+}
+.send-btn {
+    display: block;
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 20px;
+    background: #fea78b;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: auto;
+    width: 400px;
+}
+.send-btn:hover {
+    background: #aa705c;
+}

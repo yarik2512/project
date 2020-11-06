@@ -42,9 +42,13 @@
     border-radius: 10px;
     margin-bottom: 15px;
 }
+.tox-tinymce {
+    z-index: 10 !important;
+    margin-bottom: 15px;
+}
 .add-textarea {
     width: 100%;
-    height: 150px;
+    height: 300px;
     resize: none;
     font-weight: 900;
     font-size: 15px;
@@ -55,6 +59,7 @@
     color: #424242;
     font-family: sans-serif;
     margin-bottom: 15px;
+    overflow-y: auto;
 }
 .add-illustr {
     background: #c5c5c5;
