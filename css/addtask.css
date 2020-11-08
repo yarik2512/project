@@ -150,6 +150,35 @@
 .add-variate {
     margin-bottom: 15px;
 }
+.rating-radio {
+    display: none;
+}
+.rating-label {
+    display: inline-block;
+    position: relative;
+    font-weight: 900;
+    font-size: 15px;
+    color: #424242;
+    margin-bottom: 15px;
+}
+.rating-label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #434343;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 20px;
+    position: relative;
+}
+.rating-radio:checked + .rating-label::before {
+    background-color: #bad294;
+    left: 0;
+    top: 0;
+    background-image: url(../img/radio.svg);
+    background-size: cover;
+}
 .ans-input {
     display: inline-block;
     background: #c5c5c5;

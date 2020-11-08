@@ -67,7 +67,7 @@
 .actions {
     display: flex;
     justify-content: space-between;
-    width: 600px;
+    width: 800px;
     margin: auto;
 }
 .action {
