@@ -1,0 +1,54 @@
+@import 'style.css';
+
+.main {
+    padding-top: 108px;
+}
+
+.add-content-label {
+    display: block;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.add-content-input {
+    display: block;
+    background: #c5c5c5;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    margin-bottom: 15px;
+}
+
+.add-content-file {
+    display: block;
+    background: #c5c5c5;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    border: none;
+    color: #424242;
+    margin-bottom: 10px;
+}
+
+.add-content-radio-label {
+    font-weight: 900;
+    padding: 7px 10px;
+    font-weight: 900;
+    font-size: 15px;
+    color: #424242;
+}
+.add-content-btn {
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+    background: #fea78b;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 7px 10px;
+}

@@ -1,0 +1,13 @@
+@import 'style.css';
+
+.main {
+    padding-top: 108px;
+}
+.task-card {
+    margin-bottom: 20px;
+}
+.task-a {
+    text-decoration: none;
+    color: #424242;
+    font-weight: 900;
+}
